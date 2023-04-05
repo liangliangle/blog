@@ -199,6 +199,11 @@ website_count:
     site_pv: false    # Option values: true | false
     page_pv: false    # Option values: true | false
 
+analytics:
+  umami:
+    umami_enable : true
+    umami_src: "http://analyze.lianglianglee.com/umami.js"
+    umami_data_id: "17ea0407-527d-4c0b-ae64-3bdf28f5678a"
 # ---------------------------------------------------------------------------------------
 # Local Search
 # Docs: https://keep-docs.xpoet.cn/tutorial/configuration-guide/local_search.html
