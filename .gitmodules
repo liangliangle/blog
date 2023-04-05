@@ -1,0 +1,3 @@
+[submodule "themes/keep"]
+	path = themes/keep
+	url = https://github.com/liangliangle/hexo-theme-keep.git
