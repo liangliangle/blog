@@ -12,28 +12,28 @@ date: 2023-04-13 13:58:25
 服务以Java jar的形式在服务器上直接运行，外层套一个nginx作端口及域名中转发
 域名直接解析到云服务器，用户可以通过DNS轻而易举拿到云服务器IP，然后攻击。
 当时碰到了SSH暴力破解，网站被爬虫刷流量
-![](/files/assets/20230413_140305.png)
+![](https://blog-image.lianglianglee.com/assets/20230413_140305.png)
 
 ## CDN模式
-![](/files/assets/20230413_140212.png)
+![](https://blog-image.lianglianglee.com/assets/20230413_140212.png)
 
 目前常用的隐藏源站IP的方式就是在外层套一个CDN。比如阿里云的DCDN加速。其原理就是在外层再套一个nginx类服务。因为云服务厂商有更充足的带宽和计算资源，还有更充足的异常请求检查算法，比自己建设要好不少。
 引入cloudflare主要原因是其有免费的基础服务，基本够我使用。引入DCDN还有一个好处就是可以查看请求量的简要信息。
 接入及其简单，只需要在购买域名的平台将域名服务器切换到cloudflare提供的即可。
 
-![](/files/assets/20230413_140508.png)
+![](https://blog-image.lianglianglee.com/assets/20230413_140508.png)
 
 ## 引入分析
 网站部署起来后，就要想办法分析服务相关信息，比如PV，UV等等。第一反应引入第三方网站。比如google analytics。该服务国内可用。引入也很简单，只需要引入一个JS文件即可。
 引入后发现其数据比较离谱，后来发现是因为浏览器自带的防跟踪功能，会屏蔽掉这些数据分析的服务商
-![](/files/assets/20230413_140810.png)
+![](https://blog-image.lianglianglee.com/assets/20230413_140810.png)
 如果真的要分析PVUV，则需要自建服务。经过一番调研，采用了umami自建服务。
 使用docker-compose部署一个umami + postgreSQL。然后域名定义成 analyze.***.com，同样交给cloudflare作CDN。
 使用同样简单，在网站中引入一个JS文件即可。
 
 采集后的分析
 
-![](/files/assets/20230413_140617.png)
+![](https://blog-image.lianglianglee.com/assets/20230413_140617.png)
 
 ## 自恢复
 算算服务器上部署了几个程序：

@@ -46,13 +46,13 @@ docker run -d -v /srv/dev-disk-by-uuid-XXXXXX-XXX-XXX-XX/disk1:/var/webdav -e US
 4. 开始手动同步
 
 速度：
-![](/files/assets/20230406_155750.png)
+![](https://blog-image.lianglianglee.com/assets/20230406_155750.png)
 
 基本能跑到850Mbps以上
 
 老NAS的CPU占用：
 
-![](/files/assets/old_nas_cpu_use.png)
+![](https://blog-image.lianglianglee.com/assets/old_nas_cpu_use.png)
 
 ## 应用迁移
 
@@ -64,11 +64,11 @@ docker run -d -v /srv/dev-disk-by-uuid-XXXXXX-XXX-XXX-XX/disk1:/var/webdav -e US
 
 需要注意，在portainer中的CMD 对应TrueNAS的Container Args，而且有空格就要隔开，比如`-mode prod -workspace /siyuanworkspace -accessAuthCode password`,就要按照空格一个一个拆开
 
-![](/files/assets/20230406_162245.png)
+![](https://blog-image.lianglianglee.com/assets/20230406_162245.png)
 
 
 因为我需要独立的IP，所以在网络使用了独立的静态IP
-![](/files/assets/20230406_161755.png)
+![](https://blog-image.lianglianglee.com/assets/20230406_161755.png)
 
 映射一下文件夹
 
@@ -78,7 +78,7 @@ docker run -d -v /srv/dev-disk-by-uuid-XXXXXX-XXX-XXX-XX/disk1:/var/webdav -e US
 **关于文件夹权限**
 我习惯将Dock挂载的目录也SMB共享出来,方便修改配置之类的，TrueNAS默认不允许这样干，则需要进入`应用`-> `设置`-> `高级设置` 关闭`Enable Host Path Safety Checks`
 
-![](/files/assets/20230406_162603.png)
+![](https://blog-image.lianglianglee.com/assets/20230406_162603.png)
 
 同意将docker挂载的目录分到一个docker文件夹下，大概目录是这样
 

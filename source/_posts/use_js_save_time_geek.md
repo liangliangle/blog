@@ -383,11 +383,11 @@ markdown转换使用CopyDown
 查看执行效果：
 
 目录：
-![](/files/assets/20230803_183347.png)
+![](https://blog-image.lianglianglee.com/assets/20230803_183347.png)
 
 
 图片：
-![](/files/assets/20230803_183713.png)
+![](https://blog-image.lianglianglee.com/assets/20230803_183713.png)
 
 
 

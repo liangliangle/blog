@@ -42,7 +42,7 @@ tree .git
 
 使用git status查看当前仓库的状态
 
-![image](/files/assets/image-20231023162908-77wvd7b.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023162908-77wvd7b.png)​
 
 可以看到一个新增文件，这个时候.git目录没什么变化
 
@@ -50,7 +50,7 @@ tree .git
 
 接下来，我们需要使用 git add 命令将文件加入到暂存区，再看git状态
 
-![image](/files/assets/image-20231023163048-1qbqrle.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023163048-1qbqrle.png)​
 
 使用tree命令看一下目录
 
@@ -68,15 +68,15 @@ tree .git
 
 多出来一个文件夹，去看看这个文件夹是什么东西
 
-![image](/files/assets/image-20231023163209-iri6tvb.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023163209-iri6tvb.png)​
 
 一个无后缀的文件，打开后，是一个乱码
 
-![image](/files/assets/image-20231023163309-3bjxq3y.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023163309-3bjxq3y.png)​
 
 这类文件可以使用 git cat-file 打开，打开这个文件，需要将两个字符的文件夹也给加上，这里就是`e1cfd5c071a3098ba096bc37300a003f0f3f036e`​
 
-![image](/files/assets/image-20231023163527-bo6ez6n.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023163527-bo6ez6n.png)​
 
 可以看到这里是就是文本的内容
 
@@ -113,11 +113,11 @@ git commit -m"第一次提交"
 
 第一个文件，类似一个目录介绍，里面是我们add时的那个文件和文件名
 
-![image](/files/assets/image-20231023164251-hjinoiu.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023164251-hjinoiu.png)​
 
 另一个文件，是commit的一些信息，提交人，邮箱，时间等，其中 tree这一行，就是刚刚的文件。
 
-![image](/files/assets/image-20231023164404-thcflji.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023164404-thcflji.png)​
 
 这里就可以把整个提交流程串起来了
 
@@ -129,7 +129,7 @@ git commit 为什么会生成两个文件，还不知道为什么，我们等会
 
 这时通过这一串ID，可以把整个仓库串起来
 
-![image](/files/assets/image-20231023170406-ghlsodf.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023170406-ghlsodf.png)​
 
 我们再加一个文件，test_bak.txt，这里同样的add和commit
 
@@ -183,7 +183,7 @@ committer 李亮亮 <wb-lll538609@cainiao.com> 1698050920 +0800
 
 这个时候，关系链变成了这样：
 
-![image](/files/assets/image-20231023170924-eeck5wr.png)​
+![image](https://blog-image.lianglianglee.com/assets/image-20231023170924-eeck5wr.png)​
 
 到这里基本确定了objects的存储方式。既然是一个树，那怎么知道根节点是哪个呢？
 

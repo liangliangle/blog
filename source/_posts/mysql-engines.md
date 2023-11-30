@@ -13,13 +13,13 @@ MySQL中的数据用各种不同的技术存储在文件(或者内存)中。这�
 show engines;
 ```
 
-![](/files/assets/tih4p92cmigv3qr02q3avl3src.png)
+![](https://blog-image.lianglianglee.com/assets/tih4p92cmigv3qr02q3avl3src.png)
 
 ## 查看已有表信息
 
 ：show table status like 'user' \G
 
-![](/files/assets/0aa6rm8psaif1pjt86nud1ealp.png)
+![](https://blog-image.lianglianglee.com/assets/0aa6rm8psaif1pjt86nud1ealp.png)
 
  **Name**:表名 
 
