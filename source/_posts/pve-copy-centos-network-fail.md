@@ -20,7 +20,7 @@ date: 2023-11-30 14:42:03
 
 查看日志：`journalctl -xe`​
 
-![image](https://blog-image.lianglianglee.com/assets/image-20231129104735-a92h5s7.png)​
+![image](https://static.lianglianglee.com/assets/image-20231129104735-a92h5s7.png)​
 
 核心报错：
 
@@ -34,7 +34,7 @@ connection activation failed no suitable device found for this connection
 
 查看配置
 
-![image](https://blog-image.lianglianglee.com/assets/image-20231129105007-obzvhzr.png)​
+![image](https://static.lianglianglee.com/assets/image-20231129105007-obzvhzr.png)​
 
 发现网卡物理地址有配置，而且复制虚拟机基于虚拟磁盘复制，此文件肯定不会变。故这个网卡地址是一样的。PVE复制的时候又会生成新的网卡地址。
 
@@ -42,6 +42,6 @@ connection activation failed no suitable device found for this connection
 
 变更网卡地址即可，寻找PVE生成的网卡地址
 
-![image](https://blog-image.lianglianglee.com/assets/image-20231129105152-ina6aoi.png)​
+![image](https://static.lianglianglee.com/assets/image-20231129105152-ina6aoi.png)​
 
 然后更新到centos配置文件中，重启网络，即可解决。

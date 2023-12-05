@@ -109,12 +109,12 @@ NODE_VERSION  14.3
 
 确定后，即开始构建，构建完成后，可以在右上角看到临时域名
 
-![](https://blog-image.lianglianglee.com/assets/depoly_detail.png)
+![](https://static.lianglianglee.com/assets/depoly_detail.png)
 
 
 返回你的项目
 
-![](https://blog-image.lianglianglee.com/assets/cloudflare_page.png)
+![](https://static.lianglianglee.com/assets/cloudflare_page.png)
 
 可以看到项目的永久域名，后续都可以使用这个域名访问
 
@@ -124,7 +124,7 @@ NODE_VERSION  14.3
 
 添加CNAME 
 
-![](https://blog-image.lianglianglee.com/assets/dns_config.png)
+![](https://static.lianglianglee.com/assets/dns_config.png)
 
 等待10-30分钟，即可访问
 

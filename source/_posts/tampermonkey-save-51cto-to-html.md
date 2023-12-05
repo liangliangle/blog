@@ -48,7 +48,7 @@ console.log(JSON.stringify(value))
 可以看到抓取到了url及标题。
 
 
-![image](https://blog-image.lianglianglee.com/assets/20231130144903.png)
+![image](https://static.lianglianglee.com/assets/20231130144903.png)
 
 怎么解决存储的问题呢？因为每次刷新页面都会丢失这些数据。最简单的方案，直接用localStorage，所以需要提供一个获取和存储的方法
 

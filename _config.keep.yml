@@ -27,13 +27,13 @@ style:
 
   # Your blog website logo image
   # You can use local image, image external link or don't fill
-  logo: https://blog-image.lianglianglee.com/images/favicon.png
+  logo: https://static.lianglianglee.com/images/favicon.png
 
   # Favicon (You can use local image or image external link)
-  favicon: https://blog-image.lianglianglee.com/images/favicon.png
+  favicon: https://static.lianglianglee.com/images/favicon.png
 
   # Avatar (You can use local image or image external link)
-  avatar: https://blog-image.lianglianglee.com/images/favicon.png
+  avatar: https://static.lianglianglee.com/images/favicon.png
 
   # Font size, customize font size. (you don't usually have to fill)
   # e.g. font_size: 18px

@@ -6,7 +6,7 @@ date: '2023-04-04T13:00:07.258Z'
 ---
 # 1. 简介
 
-MySQL 的基本架构示意图，从中你可以清楚地看到 SQL 语句在 MySQL 的各个功能模块中的执行过程![image.png](https://blog-image.lianglianglee.com/assets/image-20221008195359-0baltm2.png)​
+MySQL 的基本架构示意图，从中你可以清楚地看到 SQL 语句在 MySQL 的各个功能模块中的执行过程![image.png](https://static.lianglianglee.com/assets/image-20221008195359-0baltm2.png)​
 
 大体来说，MySQL 可以分为 Server 层和存储引擎层两部分。
 1. Server 层包括连接器、查询缓存、分析器、优化器、执行器等，涵盖 MySQL 的大多数核心服务功能，以及所有的内置函数（如日期、时间、数学和加密函数等），所有跨存储引擎的功能都在这一层实现，比如存储过程、触发器、视图等。
@@ -24,7 +24,7 @@ MySQL 的基本架构示意图，从中你可以清楚地看到 SQL 语句在 My
 
 MyISAM 引擎是 MySQL5.5 版本（不含）之前的数据库所默认的数据表引擎。每一个采用 MyISAM 引擎的数据表在实际存储中都是由三个文件组成，分别是 frm 文件，MYD 文件和 MYI 文件，文件后缀为上述三个，文件名与数据表名相同。一个典型的 MyISAM 类型的数据表如下图（红框部分）所示：
 
-​![image](https://blog-image.lianglianglee.com/assets/image-20221013142251-odk822t.png)​
+​![image](https://static.lianglianglee.com/assets/image-20221013142251-odk822t.png)​
 
 frm 文件保存表的结构
 
@@ -78,7 +78,7 @@ MEMORY 存储引擎拥有极高的插入，更新和查询效率
 
 聚簇索引是索引的叶子节点上存储的数据。一张表只能有一个。因为 Innodb 引擎必须有主键，因为数据在聚簇索引上，及时不设置主键，Innodb 也会生成一个主键【DB_ROW_ID】。Innodb 中的除主键外的索引都是非聚簇索引(二级索引)。非聚簇索引上存放的是主键的数据，从而根据主键查找实际的数据（回表）。
 
-​![image.png](https://blog-image.lianglianglee.com/assets/image-20221008195619-a1o1jlv.png)​
+​![image.png](https://static.lianglianglee.com/assets/image-20221008195619-a1o1jlv.png)​
 
 ## 2.2 非聚簇索引
 
@@ -468,7 +468,7 @@ MySQL 的行锁是在引擎层由各个引擎自己实现的。但并不是所�
 
 顾名思义，行锁就是针对数据表中行记录的锁。这很好理解，比如事务 A 更新了一行，而这时候事务 B 也要更新同一行，则必须等事务 A 的操作完成后才能进行更新。
 
-​![image.png](https://blog-image.lianglianglee.com/assets/image-20221008194341-ol5iakt.png)​
+​![image.png](https://static.lianglianglee.com/assets/image-20221008194341-ol5iakt.png)​
 
 **在 InnoDB 事务中，行锁是在需要的时候才加上的，但并不是不需要了就立刻释放，而是要等到事务结束时才释放。这个就是两阶段锁协议。**
 
@@ -484,7 +484,7 @@ innodb_lock_wait_timeout：死锁等待的超时时间，默认为 50s，意味�
 
 当并发系统中不同线程出现循环资源依赖，涉及的线程都在等待别的线程释放资源时，就会导致这几个线程都进入无限等待的状态，称为死锁。这里我用数据库中的行锁举个例子
 
-​![image.png](https://blog-image.lianglianglee.com/assets/image-20221008194533-hogldh7.png)​
+​![image.png](https://static.lianglianglee.com/assets/image-20221008194533-hogldh7.png)​
 
 这时候，事务 A 在等待事务 B 释放 id=2 的行锁，而事务 B 在等待事务 A 释放 id=1 的行锁。 事务 A 和事务 B 在互相等待对方的资源释放，就是进入了死锁状态。当出现死锁以后，有两种策略：
 
@@ -502,7 +502,7 @@ innodb_lock_wait_timeout：死锁等待的超时时间，默认为 50s，意味�
 * **共享锁（S 锁）：**共享锁允许一个事务读数据，不允许修改数据，如果其他事务要再对该行加锁，只能加共享锁；
 * **排它锁（X 锁）：**排他锁是修改数据时加的锁，可以读取和修改数据，一旦一个事务对该行数据加锁，其他事务将不能再对该数据加任务锁。
 
-​![image.png](https://blog-image.lianglianglee.com/assets/image-20221008201113-yjyu78x.png)​
+​![image.png](https://static.lianglianglee.com/assets/image-20221008201113-yjyu78x.png)​
 
 ### 8.1.6 相关文档
 
@@ -524,9 +524,9 @@ alter table sbtest1 add column h int(11) default null,algorithm=inplace;
 * inplace：无需拷贝全表数据到新表，但可能还是需要 IN-PLACE 方式（原地，无需生成新的临时表）重建整表。这种情况下，在 DDL 的初始准备和最后结束两个阶段时通常需要加排他 MDL 锁（metadata lock，元数据锁），除此外，DDL 期间不会阻塞 DML
 * instant：只需修改数据字典中的元数据，无需拷贝数据也无需重建整表，同样，也无需加排他 MDL 锁，原表数据也不受影响。整个 DDL 过程几乎是瞬间完成的，也不会阻塞 DML。这个新特性是 8.0.12 引入的(腾讯提交的补丁)。
 
-​![image.png](https://blog-image.lianglianglee.com/assets/image-20221008192941-c13f3bz.png)​
+​![image.png](https://static.lianglianglee.com/assets/image-20221008192941-c13f3bz.png)​
 
-​![image.png](https://blog-image.lianglianglee.com/assets/image-20221008192924-dkgljj2.png)​
+​![image.png](https://static.lianglianglee.com/assets/image-20221008192924-dkgljj2.png)​
 
 > MySQL 会自己决策使用哪种方式，一般不需要指定
 
