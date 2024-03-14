@@ -219,7 +219,7 @@ local_search:
 # Docs: https://keep-docs.xpoet.cn/tutorial/configuration-guide/comment.html
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: true   # Option values: true | false
+  enable: false   # Option values: true | false
   use: artalk     # Option values: valine | gitalk | twikoo | waline | artalk
 
   # Valine
@@ -258,8 +258,8 @@ comment:
     reaction: false # Article reactions, Option values: true | false
     version: 2      # Waline version, default use v2
   artalk:
-    server: "https://artalk.lianglianglee.com"
-    site: "博客"
+    server: 
+    site: 
 # ---------------------------------------------------------------------------------------
 # RSS
 # Docs: https://keep-docs.xpoet.cn/tutorial/configuration-guide/rss.html
