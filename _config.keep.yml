@@ -202,8 +202,8 @@ website_count:
 analytics:
   umami:
     umami_enable : true
-    umami_src: "http://analyze.lianglianglee.com/umami.js"
-    umami_data_id: "17ea0407-527d-4c0b-ae64-3bdf28f5678a"
+    umami_src: "https://umami.lianglianglee.com/script.js"
+    umami_data_id: "c45fa8bb-5a87-4991-975c-b53e8224b33c"
 # ---------------------------------------------------------------------------------------
 # Local Search
 # Docs: https://keep-docs.xpoet.cn/tutorial/configuration-guide/local_search.html
