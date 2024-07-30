@@ -1,6 +1,8 @@
+---
 title: TrueNAS成型记
 tags: []
 categories: []
+abbrlink: d7671edf
 date: 2023-04-06 15:05:48
 ---
 # 背景

@@ -1,6 +1,8 @@
+---
 title: PVE复制CentOS导致网卡启动失败的问题
 tags: []
 categories: []
+abbrlink: 98c423c7
 date: 2023-11-30 14:42:03
 ---
 

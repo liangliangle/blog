@@ -1,6 +1,8 @@
+---
 title: MySQL引擎介绍
 tags: []
 categories: []
+abbrlink: fcfd18c1
 date: 2022-04-04 22:44:48
 ---
 # 引擎是什么？

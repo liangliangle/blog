@@ -1,6 +1,8 @@
+---
 title: 【发现好项目】给你的Postgres加个备份
 tags: []
 categories: []
+abbrlink: fa974d33
 date: 2024-07-29 23:03:04
 ---
 

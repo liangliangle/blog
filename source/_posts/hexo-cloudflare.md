@@ -1,6 +1,8 @@
-title: 使用Hexo+cloudflare搭建个人博客[当前博客搭建过程]
+---
+title: '使用Hexo+cloudflare搭建个人博客[当前博客搭建过程]'
 tags: []
 categories: []
+abbrlink: d3175a9a
 date: 2023-04-05 14:38:18
 ---
 # 1 背景介绍

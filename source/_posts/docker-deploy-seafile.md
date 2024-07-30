@@ -1,6 +1,8 @@
+---
 title: Docker部署Seafile服务
 tags: []
 categories: []
+abbrlink: 1f9eb31a
 date: 2023-07-04 19:58:00
 ---
 # 背景

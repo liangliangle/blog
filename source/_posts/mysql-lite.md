@@ -1,8 +1,10 @@
+---
 title: MySQL 相关知识汇总
 categories: []
 tags:
   - MySQL
 date: '2023-04-04T13:00:07.258Z'
+abbrlink: a3556bbe
 ---
 # 1. 简介
 

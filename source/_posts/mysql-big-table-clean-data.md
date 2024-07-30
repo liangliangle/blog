@@ -1,6 +1,8 @@
+---
 title: MySQL超大表删除数据
 tags: []
 categories: []
+abbrlink: 8ff92769
 date: 2023-09-12 16:10:34
 ---
 # 背景

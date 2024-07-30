@@ -1,6 +1,8 @@
+---
 title: 从文件看Git
 tags: []
 categories: []
+abbrlink: e25aabb4
 date: 2023-10-26 11:15:09
 ---
 # 从文件看Git

@@ -1,6 +1,8 @@
+---
 title: 油猴脚本保存51CTO为HTML文件
 tags: []
 categories: []
+abbrlink: 4d33d521
 date: 2023-11-12 14:11:46
 ---
 # 背景

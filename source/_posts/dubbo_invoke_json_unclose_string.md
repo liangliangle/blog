@@ -1,6 +1,8 @@
+---
 title: 记一次Dubbo invoke命令的问题
 tags: []
 categories: []
+abbrlink: 851d3eeb
 date: 2024-03-14 11:04:12
 ---
 # 记一次Dubbo invoke命令的问题

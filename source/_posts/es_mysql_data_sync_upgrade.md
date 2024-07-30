@@ -1,6 +1,8 @@
+---
 title: 记一次业务系统与ES的同步方案升级
 tags: []
 categories: []
+abbrlink: cbda41f1
 date: 2023-08-28 15:05:47
 ---
 # 背景

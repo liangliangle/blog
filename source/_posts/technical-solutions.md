@@ -1,6 +1,8 @@
+---
 title: 技术方案模板
 tags: []
 categories: []
+abbrlink: '16911e78'
 date: 2023-03-04 22:39:28
 ---
 

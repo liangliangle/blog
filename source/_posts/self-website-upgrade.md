@@ -1,6 +1,8 @@
+---
 title: 个人小网站的升级之路
 tags: []
 categories: []
+abbrlink: 7d78d6bb
 date: 2023-04-13 13:58:25
 ---
 # 背景

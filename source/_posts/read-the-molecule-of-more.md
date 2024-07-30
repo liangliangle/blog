@@ -1,9 +1,11 @@
+---
 title: 读《贪婪的多巴胺》第一章
 tags:
   - 读书
   - 杂项
 categories:
   - 读书
+abbrlink: 37dc4048
 date: 2023-06-17 19:45:16
 ---
 
